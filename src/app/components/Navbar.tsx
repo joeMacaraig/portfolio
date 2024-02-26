@@ -17,6 +17,9 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const handleResume = () => {
+    window.open("/SWE_RESUME.pdf", "_blank");
+  };
 
   return (
     <nav
@@ -36,8 +39,13 @@ export default function Navbar() {
             </Link>
           </li>
         ))}
-        <li className="border border-violet-400 px-4 py-2 rounded-md tracking-wider">
-          Resume
+        <li className="">
+          <button
+            onClick={handleResume}
+            className="border border-violet-400 px-4 py-2 rounded-md tracking-wider"
+          >
+            Resume
+          </button>
         </li>
       </ul>
     </nav>

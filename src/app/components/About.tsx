@@ -12,19 +12,20 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="h-full md:h-[100vh] max-w-6xl mx-auto border p-6"
+      className="h-full max-w-6xl mx-auto p-6"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
       <div className="flex flex-col">
-        <h1 className="py-4 text-3xl">
+        <h1 className="py-4 text-4xl">
           <span className="font-incon text-violet-400">01. </span>
-          About Me
+          About Me 
         </h1>
         <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2">
           <div className="w-[90%]">
             <p className="mb-6">
+              {" "}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Vulputate sapien nec sagittis aliquam malesuada bibendum.
@@ -52,8 +53,8 @@ export default function About() {
             </p>
           </div>
           <div className="flex items-center flex-col mt-10">
-            <div className="mb-4">
-              <div className="h-80 w-80 rounded flex items-center justify-center border border-violet-400 overflow-hidden">
+            <div className="mb-4 flex">
+              <div className="h-80 w-80 rounded flex flex-1 items-center justify-center border border-violet-400 overflow-hidden">
                 <Image
                   src="/joe.jpeg"
                   alt="joe"
@@ -66,19 +67,19 @@ export default function About() {
             <div className="flex gap-6">
               <Link
                 href="https://www.linkedin.com/in/joseph-macaraig/"
-                className="p-5 text-violet-500 hover:text-white hover:bg-violet-400 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
               >
                 <SlSocialLinkedin size={24} />
               </Link>
               <Link
                 href="https://github.com/joeMacaraig"
-                className="p-5 text-violet-500 hover:text-white hover:bg-violet-400 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
               >
                 <FiGithub size={24} />
               </Link>
               <Link
                 href="https://www.instagram.com/josephmacaroni14/"
-                className="p-5 text-violet-500 hover:text-white hover:bg-violet-400 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
               >
                 <FaInstagram size={24} />
               </Link>

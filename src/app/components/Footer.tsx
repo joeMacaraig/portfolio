@@ -5,7 +5,7 @@ export default function Footer() {
     return new Date().getFullYear();
   };
   return (
-    <div className="text-center max-w-6xl mx-auto tracking-wide p-3 border">
+    <div className="text-center max-w-6xl mx-auto tracking-wide p-3">
       {getYear() == 2024 ? (
         <p>&copy;2024 Joseph Bryan Macaraig.</p>
       ) : (
