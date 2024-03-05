@@ -66,43 +66,130 @@ export const skills = [
 
 export const projects = [
   {
-    title: "RetroSoleHub",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
-    date: "2023",
-    skills: ["React.js", "Node.js", "MongoDB", "Express", "Postman"],
-  },
-  {
     title: "Visuals",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+    image: "/v.jpeg",
     date: "2024",
+    github: "https://github.com/joeMacaraig/visuals-app",
+    link: "",
     skills: ["Next.js", "Tailwindcss"],
   },
   {
     title: "Generator",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+    image: "/pps.jpeg",
     date: "2024",
+    github: "https://github.com/joeMacaraig/generator-app",
+    link: "",
     skills: ["Next.js", "React.js"],
   },
   {
     title: "PalasadePrintingSupply",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+    image: "/pps.jpeg",
     date: "2024",
+    github: "https://github.com/joeMacaraig/pps",
+    link: "",
     skills: ["Next.js", "Resend", "Tailwindcss"],
   },
   {
-    title: "Face Recognition",
+    title: "RetroSoleHub",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+    image: "/rsh.jpeg",
     date: "2023",
-    skills: ["Python", "Numpy"],
+    github: "",
+    link: "",
+    skills: ["React.js", "Node.js", "MongoDB", "Express", "Postman"],
+  },
+];
+
+export const moreProjects = [
+  {
+    title: "Face Recognition",
+    description: "Utilized OpenCV ",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "Webscraper",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "CRUD API",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Javascript", "Node.js", "Express", "MongoDB", "Postman"],
+  },
+  {
+    title: "Face Recognition",
+    description: "Utilized OpenCV ",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "Webscraper",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "CRUD API",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Javascript", "Node.js", "Express", "MongoDB", "Postman"],
+  },
+  {
+    title: "Face Recognition",
+    description: "Utilized OpenCV ",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "Webscraper",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "CRUD API",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Javascript", "Node.js", "Express", "MongoDB", "Postman"],
+  },
+  {
+    title: "Face Recognition",
+    description: "Utilized OpenCV ",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "Webscraper",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Python"],
+  },
+  {
+    title: "CRUD API",
+    description: "Something",
+    date: "2023",
+    github: "",
+    skills: ["Javascript", "Node.js", "Express", "MongoDB", "Postman"],
   },
 ];

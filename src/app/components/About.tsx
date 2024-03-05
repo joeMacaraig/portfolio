@@ -20,41 +20,55 @@ export default function About() {
       <div className="flex flex-col">
         <h1 className="py-4 text-4xl">
           <span className="font-incon text-violet-400">01. </span>
-          About Me 
+          About Me
         </h1>
-        <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2">
-          <div className="w-[90%]">
-            <p className="mb-6">
+        <div className="grid grid-cols-2 mt-10 ">
+          <div className="flex flex-col gap-4">
+            <p className="indent-6 text-justify">
+              I'm not just someone who writes code—I'm a problem solver, a
+              creative thinker, and a tech enthusiast. I love diving into
+              complex challenges and architecting solutions that deliver
+              exceptional user experiences. Whether it's crafting sleek
+              front-end interfaces or designing robust back-end systems, I
+              thrive on the opportunity to blend creativity with technical
+              expertise. But what truly drives me is the chance to collaborate
+              and innovate alongside other developers.
+            </p>{" "}
+            <p className="indent-6 text-justify">
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Vulputate sapien nec sagittis aliquam malesuada bibendum.
-              Venenatis cras sed felis eget velit aliquet. Erat imperdiet sed
-              euismod nisi porta lorem mollis aliquam. Id leo in vitae turpis
-              massa sed elementum. Morbi leo urna molestie at. Senectus et netus
-              et malesuada fames ac turpis. Sed vulputate odio ut enim. Volutpat
-              est velit egestas dui id ornare arcu odio ut. Cras pulvinar mattis
-              nunc sed blandit. At quis risus sed vulputate odio ut. Mauris
-              ultrices eros in cursus turpis massa tincidunt dui ut. Duis
-              ultricies lacus sed turpis tincidunt id.
+              In essence, I'm not just passionate about software development—I'm
+              passionate about the people, the projects, and the possibilities
+              that come with it. And I'm excited to embark on this journey of
+              continuous learning, growth, and innovation with like-minded
+              individuals who share my vision for building a better digital
+              future.
             </p>
-            <p className="mb-6">
-              Suspendisse potenti nullam ac tortor vitae purus. Adipiscing elit
-              ut aliquam purus sit. Senectus et netus et malesuada fames ac
-              turpis egestas. Suspendisse in est ante in nibh. Ornare lectus sit
-              amet est placerat in egestas erat imperdiet. Senectus et netus et
-              malesuada fames ac turpis. Id semper risus in hendrerit gravida.
-              Adipiscing enim eu turpis egestas pretium aenean pharetra magna
-              ac. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Eget
-              gravida cum sociis natoque penatibus. Pellentesque massa placerat
-              duis ultricies lacus sed turpis. Massa enim nec dui nunc. Feugiat
-              nisl pretium fusce id velit. In fermentum et sollicitudin ac orci
-              phasellus. Orci a scelerisque purus semper eget duis at tellus.
-            </p>
+            <div>
+              <p className="mb-5 font-medium">Hobbies:</p>
+              <div className="grid grid-cols-4 gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-5 h-5 rounded-full bg-yellow-500"></div>
+                  <p> run / hike </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-6 h-5 rounded-full bg-orange-500"></div>
+                  <p> play basketball </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-5 h-5 rounded-full bg-red-500"></div>
+                  <p> lift weights </p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-5 h-5 rounded-full bg-blue-500"></div>
+                  <p> read </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center flex-col mt-10">
-            <div className="mb-4 flex">
-              <div className="h-80 w-80 rounded flex flex-1 items-center justify-center border border-violet-400 overflow-hidden">
+          <div className="flex items-center flex-col gap-4">
+            {/* photo */}
+            <div className="flex">
+              <div className="h-80 w-80 flex flex-1 items-center justify-center border rounded-full border-violet-400 overflow-hidden">
                 <Image
                   src="/joe.jpeg"
                   alt="joe"
@@ -64,26 +78,33 @@ export default function About() {
                 />
               </div>
             </div>
+            {/* about me */}
+            <div className="text-center">
+              <h1 className="text-lg font-bold">Joseph Bryan</h1>
+              <p className="font-light text-lg">Full Stack Software Engineer</p>
+            </div>
+            {/* icons */}
             <div className="flex gap-6">
               <Link
                 href="https://www.linkedin.com/in/joseph-macaraig/"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
               >
                 <SlSocialLinkedin size={24} />
               </Link>
               <Link
                 href="https://github.com/joeMacaraig"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
               >
                 <FiGithub size={24} />
               </Link>
               <Link
                 href="https://www.instagram.com/josephmacaroni14/"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded-full flex items-center justify-center transition"
+                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
               >
                 <FaInstagram size={24} />
               </Link>
             </div>
+            {/* hobbies */}
           </div>
         </div>
       </div>

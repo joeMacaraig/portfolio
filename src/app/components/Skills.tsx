@@ -3,8 +3,8 @@ import { skills } from "../lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="h-full max-w-6xl mx-auto py-6 px-4">
-      <div className="">
+    <section id="skills" className="h-full w-full">
+      <div className="max-w-6xl mx-auto py-6 px-4">
         <h1 className="text-4xl mb-4">
           <span className="font-incon text-violet-400">02. </span>Skills
         </h1>
