@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { motion } from "framer-motion";
+import { hobbies } from "../lib/data";
 
 export default function About() {
   return (
@@ -43,25 +44,15 @@ export default function About() {
               individuals who share my vision for building a better digital
               future.
             </p>
-            <div>
+            <div className="text-lg">
               <p className="mb-5 font-medium">Hobbies:</p>
-              <div className="grid grid-cols-4 gap-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-5 h-5 rounded-full bg-yellow-500"></div>
-                  <p> run / hike </p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-6 h-5 rounded-full bg-orange-500"></div>
-                  <p> play basketball </p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-5 h-5 rounded-full bg-red-500"></div>
-                  <p> lift weights </p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-5 h-5 rounded-full bg-blue-500"></div>
-                  <p> read </p>
-                </div>
+              <div className="grid grid-cols-2 gap-4">
+                {hobbies.map((item) => (
+                  <div className="flex items-center gap-2">
+                    <div>{item.icon}</div>
+                    <div>{item.title}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

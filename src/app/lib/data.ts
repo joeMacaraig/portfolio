@@ -1,8 +1,9 @@
 //icons
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaRunning, FaDumbbell } from "react-icons/fa";
 import { SiIbm } from "react-icons/si";
+import { GiRead, GiBasketballBall } from "react-icons/gi"; //read, basketball
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -11,6 +12,25 @@ export const links = [
   { name: "Credentials", hash: "#credentials" },
   { name: "Projects", hash: "#projects" },
   { name: "Contact", hash: "#contact" },
+] as const;
+
+export const hobbies = [
+  {
+    title: "run / hike",
+    icon: React.createElement(FaRunning),
+  },
+  {
+    title: "play basketball",
+    icon: React.createElement(GiBasketballBall),
+  },
+  {
+    title: "lift weights",
+    icon: React.createElement(FaDumbbell),
+  },
+  {
+    title: "read",
+    icon: React.createElement(GiRead),
+  },
 ] as const;
 
 export const credentials = [
@@ -112,14 +132,14 @@ export const moreProjects = [
     title: "Face Recognition",
     description: "Utilized OpenCV ",
     date: "2023",
-    github: "",
+    github: "https://github.com/joeMacaraig/Face-Recognition",
     skills: ["Python"],
   },
   {
     title: "Webscraper",
     description: "Something",
     date: "2023",
-    github: "",
+    github: "https://github.com/joeMacaraig/palasade-webscraper",
     skills: ["Python"],
   },
   {
