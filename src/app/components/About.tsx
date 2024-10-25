@@ -19,13 +19,13 @@ export default function About() {
       transition={{ delay: 0.175 }}
     >
       <div className="flex flex-col">
-        <h1 className="py-4 text-4xl">
+        <h1 className="py-4 text-2xl md:text-4xl">
           <span className="font-incon text-violet-400">01. </span>
           About Me
         </h1>
-        <div className="grid grid-cols-2 mt-10 ">
+        <div className="flex flex-col-reverse gap-4 sm:grid sm:grid-cols-2 mt-10">
           <div className="flex flex-col gap-4">
-            <p className="indent-6 text-justify">
+            <p className="text-justify">
               I'm not just someone who writes code—I'm a problem solver, a
               creative thinker, and a tech enthusiast. I love diving into
               complex challenges and architecting solutions that deliver
@@ -35,7 +35,7 @@ export default function About() {
               expertise. But what truly drives me is the chance to collaborate
               and innovate alongside other developers.
             </p>{" "}
-            <p className="indent-6 text-justify">
+            <p className="text-justify">
               {" "}
               In essence, I'm not just passionate about software development—I'm
               passionate about the people, the projects, and the possibilities
@@ -48,7 +48,7 @@ export default function About() {
               <p className="mb-5 font-medium">Hobbies:</p>
               <div className="grid grid-cols-2 gap-4">
                 {hobbies.map((item) => (
-                  <div className="flex items-center gap-2">
+                  <div key={item.title} className="flex items-center gap-2">
                     <div>{item.icon}</div>
                     <div>{item.title}</div>
                   </div>
@@ -56,10 +56,10 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="flex items-center flex-col gap-4">
+          <div className="flex items-center flex-col gap-4 order-1">
             {/* photo */}
             <div className="flex">
-              <div className="h-80 w-80 flex flex-1 items-center justify-center border rounded-full border-violet-400 overflow-hidden">
+              <div className="h-80 w-80 flex flex-1 items-center justify-center border rounded-xl border-violet-400 overflow-hidden">
                 <Image
                   src="/joe.jpeg"
                   alt="joe"
@@ -71,31 +71,9 @@ export default function About() {
             </div>
             {/* about me */}
             <div className="text-center">
-              <h1 className="text-lg font-bold">Joseph Bryan</h1>
-              <p className="font-light text-lg">Full Stack Software Engineer</p>
+              <h1 className="md:text-lg font-bold">Joseph Bryan</h1>
+              <p className="font-light md:text-lg">Full Stack Software Engineer</p>
             </div>
-            {/* icons */}
-            <div className="flex gap-6">
-              <Link
-                href="https://www.linkedin.com/in/joseph-macaraig/"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
-              >
-                <SlSocialLinkedin size={24} />
-              </Link>
-              <Link
-                href="https://github.com/joeMacaraig"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
-              >
-                <FiGithub size={24} />
-              </Link>
-              <Link
-                href="https://www.instagram.com/josephmacaroni14/"
-                className="p-5 text-violet-400 shadow-lg shadow-violet-500 hover:text-white hover:bg-violet-500 hover:-translate-y-2 duration-300 ease-in-out border border-violet-400 rounded flex items-center justify-center transition"
-              >
-                <FaInstagram size={24} />
-              </Link>
-            </div>
-            {/* hobbies */}
           </div>
         </div>
       </div>
