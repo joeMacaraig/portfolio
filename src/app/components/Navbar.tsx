@@ -103,7 +103,7 @@ export default function Navbar() {
   return (
     <nav
       className={`sticky top-0 w-full bg-transparent text-white transition-transform duration-300 backdrop-blur-xl py-4 px-6 z-20 ${
-        scrolling ? "" : "-translate-y-full"
+        open ? "" : `${scrolling ? "" : "-translate-y-full"}`
       }`}
     >
       {/* non-mobile */}
@@ -142,7 +142,7 @@ export default function Navbar() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white p-6 z-10"
+              className="fixed left-0 top-0 w-full h-[100vh] origin-top bg-black text-white p-6 z-10"
             >
               <div className="flex h-full flex-col">
                 <div className="flex justify-between">
