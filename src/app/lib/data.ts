@@ -1,8 +1,40 @@
 //icons
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
-import { FaGoogle } from "react-icons/fa";
+import {
+  FaGoogle,
+  FaRunning,
+  FaLinkedin,
+  FaInstagramSquare,
+  FaGithubSquare,
+} from "react-icons/fa";
+
 import { SiIbm } from "react-icons/si";
+import { GiRead, GiBasketballBall, GiGolfFlag } from "react-icons/gi"; //read, basketball
+
+export const icons = [
+  {
+    icon: React.createElement(FaLinkedin),
+    link: "https://www.linkedin.com/in/joseph-macaraig/",
+    platform: "Linkedin",
+    username: "Joseph Bryan Macaraig",
+    color: "text-blue-500",
+  },
+  {
+    icon: React.createElement(FaGithubSquare),
+    link: "https://github.com/joeMacaraig",
+    platform: "Github",
+    username: "joeMacaraig",
+    color: "text-gray-500",
+  },
+  {
+    icon: React.createElement(FaInstagramSquare),
+    link: "https://www.instagram.com/josephmacaraig14/",
+    platform: "Instagram",
+    username: "josephmacaraig14",
+    color: "text-purple-500",
+  },
+];
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -11,35 +43,57 @@ export const links = [
   { name: "Credentials", hash: "#credentials" },
   { name: "Projects", hash: "#projects" },
   { name: "Contact", hash: "#contact" },
+  { name: "Resume", hash: "https://docs.google.com/document/d/1D5JxkNK9Vf1IGYFSmV5mTRh3COlm23xnrUeC-LOodjA/edit?tab=t.0"}
+] as const;
+
+export const hobbies = [
+  {
+    title: "running",
+    icon: React.createElement(FaRunning),
+  },
+  {
+    title: "basketball",
+    icon: React.createElement(GiBasketballBall),
+  },
+  {
+    title: "golfing",
+    icon: React.createElement(GiGolfFlag),
+  },
+  {
+    title: "read",
+    icon: React.createElement(GiRead),
+  },
 ] as const;
 
 export const credentials = [
   {
     title: "Bachelor’s Degree in Computer Science",
     description:
-      "First generation graduate at California State University, San Bernardino. Relevant Courses: Data Structures and Algorithms, Artificial Intelligence, Machine Learning, Databases, Web Development, Software Design and Development, Operating Systems.",
+      "First generation graduate at California State University, San Bernardino.",
     icon: React.createElement(LuGraduationCap),
     date: "May 2023.",
+    link: "",
   },
   {
     title: "Google IT Support Professional Certificate",
     description:
-      "IT support program, developed by Google, that covers troubleshooting, customer service, networking, operating systems, system administration, and security, and includes hands-on labs",
+      "IT support program, developed by Google, covers troubleshooting, customer service, networking, operating systems, system administration, and security, and includes hands-on labs",
     icon: React.createElement(FaGoogle),
     date: "Dec 2023.",
+    link: "https://www.coursera.org/account/accomplishments/specialization/3RTMZY8TC9YL?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
   },
   {
     title: "IBM Full Stack Software Developer Professional Certificate",
     description:
-      "Full Stack Software Developer program, developed by IBM, that covers front-end, back-end, and cloud development, and includes hand-on labs.",
+      "Full Stack Software Developer program, developed by IBM, covers front-end, back-end, and cloud development, and includes hand-on labs.",
     icon: React.createElement(SiIbm),
-    date: "Present.",
+    date: "July 2024.",
+    link: "https://www.coursera.org/account/accomplishments/specialization/XSNGMB5QPQQV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
   },
 ] as const;
 
 export const skills = [
-  "HTML",
-  "CSS",
+  "HTML / CSS",
   "Javascript",
   "Typescript",
   "Python",
@@ -57,52 +111,48 @@ export const skills = [
   "MongoDB",
   "SQL",
   "NoSQL",
+  "PostgreSQL",
   "Git",
-  "AWS",
   "Docker",
+  "Kubernetes",
   "GraphQL",
   "Prisma",
+  "IBM Cloud",
+  "AWS",
+  "MacOS",
+  "WindowOS",
+  "Linux",
 ] as const;
 
 export const projects = [
   {
-    title: "RetroSoleHub",
+    title: "LiveDocs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
-    date: "2023",
-    skills: ["React.js", "Node.js", "MongoDB", "Express", "Postman"],
-  },
-  {
-    title: "Visuals",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+      "Your Go-To Collaborative Editor. Unlock the full power of collaboration with our game-changing editor! No more juggling between files or waiting for feedback—now you and your team can create, edit, and refine content together in real time. With dynamic live updates and instant comments.",
+    image: "/assets/jbmlivedocs.png",
     date: "2024",
-    skills: ["Next.js", "Tailwindcss"],
-  },
-  {
-    title: "Generator",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
-    date: "2024",
-    skills: ["Next.js", "React.js"],
+    github: "https://github.com/joeMacaraig/live-docs",
+    link: "https://jbmlivedocs.vercel.app/",
+    skills: ["Next.js", "React.js", "Tailwindcss", "Clerk", "Sentry"],
   },
   {
     title: "PalasadePrintingSupply",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+      "Palasade Printing Supply offers personalized printing and embroidery services, focusing on crafting unique products that reflect individual or brand identities. From shirts to accessories, they aim to turn creative ideas into tangible art. Originating from an in-house solution, the company has evolved into a full-fledged business serving diverse industries.",
+    image: "/assets/palasadeprintingsupply.png",
     date: "2024",
-    skills: ["Next.js", "Resend", "Tailwindcss"],
+    github: "https://github.com/joeMacaraig/palasadeprintingsupply",
+    link: "https://palasadeprintingsupply.vercel.app/",
+    skills: ["Next.js", "React.js", "Resend", "Tailwindcss"],
   },
   {
-    title: "Face Recognition",
+    title: "RetroSoleHub",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "url",
+      "A sleek and efficient shoe reselling platform designed for sneaker enthusiasts and collectors,built using the MERN stack (MongoDB, Express, React.js, Node.js). The goal of RetroSoleHub is to provide a seamless marketplace for buyers to browse the limited-edition shoes and see what the store holds.",
+    image: "/rsh.jpeg",
     date: "2023",
-    skills: ["Python", "Numpy"],
+    github: "https://github.com/joeMacaraig/retrosolehub/tree/v1",
+    link: "https://github.com/joeMacaraig/retrosolehub/tree/v1",
+    skills: ["React.js", "Node.js", "MongoDB", "Express", "Postman"],
   },
 ];
