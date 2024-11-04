@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Joseph Bryan Macaraig.",
-  description: "A Portfolio to display my skills, my courses, and my projects.",
+  description: "A Portfolio to display my skills, my experiences, and my projects.",
 };
 
 export default function RootLayout({
