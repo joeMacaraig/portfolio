@@ -43,7 +43,10 @@ export const links = [
   { name: "Credentials", hash: "#credentials" },
   { name: "Projects", hash: "#projects" },
   { name: "Contact", hash: "#contact" },
-  { name: "Resume", hash: "https://docs.google.com/document/d/1D5JxkNK9Vf1IGYFSmV5mTRh3COlm23xnrUeC-LOodjA/edit?tab=t.0"}
+  {
+    name: "Resume",
+    hash: "https://docs.google.com/document/d/1D5JxkNK9Vf1IGYFSmV5mTRh3COlm23xnrUeC-LOodjA/edit?tab=t.0",
+  },
 ] as const;
 
 export const hobbies = [
@@ -126,6 +129,16 @@ export const skills = [
 
 export const projects = [
   {
+    title: "CarexCell",
+    description:
+      "A Health Management System that is an intuitive and user-friendly platform that helps schedule and manage healthcare appointments. This application allows users to efficiently create, update, and cancel appointments.",
+    image: "/assets/carexcell.png",
+    date: "2024",
+    github: "https://github.com/joeMacaraig/hms",
+    link: "https://carexcell.vercel.app/",
+    skills: ["Next.js", "React.js", "Tailwindcss", "Appwrite"],
+  },
+  {
     title: "LiveDocs",
     description:
       "Your Go-To Collaborative Editor. Unlock the full power of collaboration with our game-changing editor! No more juggling between files or waiting for feedback—now you and your team can create, edit, and refine content together in real time. With dynamic live updates and instant comments.",
@@ -149,7 +162,7 @@ export const projects = [
     title: "RetroSoleHub",
     description:
       "A sleek and efficient shoe reselling platform designed for sneaker enthusiasts and collectors,built using the MERN stack (MongoDB, Express, React.js, Node.js). The goal of RetroSoleHub is to provide a seamless marketplace for buyers to browse the limited-edition shoes and see what the store holds.",
-    image: "/rsh.jpeg",
+    image: "/assets/rsh.jpeg",
     date: "2023",
     github: "https://github.com/joeMacaraig/retrosolehub/tree/v1",
     link: "https://github.com/joeMacaraig/retrosolehub/tree/v1",
